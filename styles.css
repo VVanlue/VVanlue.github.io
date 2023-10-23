@@ -1,0 +1,21 @@
+body {
+  background: MediumSeaGreen;
+  font-family: Helvetica;
+}
+
+h1 {
+  color: Orange;
+  text-align: center;
+}
+
+.assign {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  background: LightGray;
+}
+
+.assign img {
+  width: 200px;
+  padding: 10px;
+}
