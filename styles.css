@@ -154,4 +154,27 @@ p {
 }
 
 
+ul.social-links {
+  list-style-type: none; 
+  padding: 0;
+  text-align: center; 
+}
+
+ul.social-links li {
+  display: inline; 
+  margin: 0 15px;
+}
+
+ul.social-links a {
+  text-decoration: none; 
+  color: #2980b9;
+  font-weight: 600; 
+  transition: color 0.3s ease; 
+}
+
+ul.social-links a:hover {
+  color: #1abc9c; 
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
