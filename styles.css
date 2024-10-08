@@ -35,6 +35,18 @@ p {
   font-size: 1em;
 }
 
+.resume-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.resume-icon {
+  width:30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 .cta-button {
   display: inline-block;
   margin-top: 20px;
