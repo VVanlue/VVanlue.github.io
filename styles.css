@@ -1,13 +1,60 @@
 body { 
-  background: #f0f4f8; /* Soft, light grayish-blue */
-  font-family: 'Open Sans', sans-serif; /* Clean and modern font */
-  color: #333; /* Dark gray for general text */
+  background: #f0f4f8; 
+  font-family: 'Open Sans', sans-serif; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.content-section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+  .content-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+.cta-button, .resume-link, .projects-grid a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover, .resume-link:hover, .projects-grid a:hover {
+  background-color: #1abc9c;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 350px;
+  transtion: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
-  color: #2c3e50; /* Deep blue-gray */
-  font-family: 'Montserrat', sans-serif; /* Bold, elegant font for headers */
-  font-weight: 700; /* Makes the heading bold */
+  color: #2c3e50; 
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700; 
   margin-bottom: 5px;
 }
 
@@ -67,30 +114,30 @@ p {
   flex-direction: column;
   padding: 15px;
   margin: 20px auto;
-  background: #ecf0f1; /* Light, soft gray */
-  border-radius: 8px; /* Soft rounded corners */
+  background: #ecf0f1; 
+  border-radius: 8px; 
   max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
 }
 
 .assign a {
   text-decoration: none;
-  color: #2980b9; /* Calm, vibrant blue */
-  font-weight: 600; /* Makes the link slightly bold */
-  font-size: 1.2em; /* Slightly larger for emphasis */
+  color: #2980b9;
+  font-weight: 600; 
+  font-size: 1.2em; 
 }
 
 .assign a:hover {
-  color: #1abc9c; /* Soft greenish-blue hover effect */
+  color: #1abc9c; 
 }
 
 .assign p {
   font-size: 16px;
-  color: #555; /* Medium-dark gray for better readability */
-  line-height: 1.6; /* Improves text spacing */
+  color: #555; 
+  line-height: 1.6; 
   margin-top: 10px;
 }
 
-/* Ensure fonts are applied consistently across all devices */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
