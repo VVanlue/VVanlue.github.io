@@ -6,12 +6,51 @@ body {
 
 h1 {
   color: #2c3e50; /* Deep blue-gray */
-  text-align: center;
   font-family: 'Montserrat', sans-serif; /* Bold, elegant font for headers */
   font-weight: 700; /* Makes the heading bold */
+  margin-bottom: 5px;
 }
 
-.assign {
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.intro-text {
+  flex-grow: 1;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #1abc9c;
+}
+    
+  
+  .assign {
   display: flex;
   flex-direction: column;
   padding: 15px;
