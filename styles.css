@@ -1,21 +1,45 @@
-body {
-  background: MediumSeaGreen;
-  font-family: Helvetica;
+body { 
+  background: #f0f4f8; /* Soft, light grayish-blue */
+  font-family: 'Open Sans', sans-serif; /* Clean and modern font */
+  color: #333; /* Dark gray for general text */
 }
 
 h1 {
-  color: Orange;
+  color: #2c3e50; /* Deep blue-gray */
   text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Bold, elegant font for headers */
+  font-weight: 700; /* Makes the heading bold */
 }
 
 .assign {
   display: flex;
-  padding: 10px;
-  margin: 10px;
-  background: LightGray;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px auto;
+  background: #ecf0f1; /* Light, soft gray */
+  border-radius: 8px; /* Soft rounded corners */
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  text-align: center;
 }
 
-.assign img {
-  width: 200px;
-  padding: 10px;
+.assign a {
+  text-decoration: none;
+  color: #2980b9; /* Calm, vibrant blue */
+  font-weight: 600; /* Makes the link slightly bold */
+  font-size: 1.2em; /* Slightly larger for emphasis */
 }
+
+.assign a:hover {
+  color: #1abc9c; /* Soft greenish-blue hover effect */
+}
+
+.assign p {
+  font-size: 16px;
+  color: #555; /* Medium-dark gray for better readability */
+  line-height: 1.6; /* Improves text spacing */
+  margin-top: 10px;
+}
+
+/* Ensure fonts are applied consistently across all devices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
