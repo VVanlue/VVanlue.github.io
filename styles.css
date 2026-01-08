@@ -1,189 +1,126 @@
-
-
-body { 
-  background: #5FA777; 
-  font-family: 'Open Sans', sans-serif; 
-  color: #333; 
+/* ---------- Background ---------- */
+body {
   margin: 0;
-  padding: 0;
-}
-
-
-.content-section {
-  background-color: #FCF8F7;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 30px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-align: center;
-}
-
-  .content-section:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-
-.cta-button, .resume-link, .projects-grid a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #3fbfae;
+  font-family: 'Open Sans', sans-serif;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  background: url("background.jpg") center/cover no-repeat fixed;
+  position: relative;
 }
 
-.cta-button:hover, .resume-link:hover, .projects-grid a:hover {
-  background-color: #1abc9c;
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
-.project-card {
-  background-color: #FCF8F7;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 350px;
-  transtion: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
   gap: 20px;
-}
-
-h1 {
-  color: #113d21; 
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 700; 
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto; 
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px;
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  margin-right: 20px;
+  border: 3px solid #73000a;
 }
 
-.intro-text {
-  max-width: 600px;
-  text-align: center;
-}
-
-p {
-  margin-top: 0;
-  font-size: 1em;
-}
-
-.resume-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.resume-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #1fa380;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background-color: #1abc9c;
-}
-    
-  
-  .assign {
+.header-text {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  margin: 20px auto;
-  background: #ecf0f1; 
-  border-radius: 8px; 
-  max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  text-align: center;
 }
 
-.assign a {
+.name-banner {
+  background: #73000a;
+  padding: 10px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle-banner {
+  background: black;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Buttons ---------- */
+.cta-button,
+.btn {
+  margin-left: auto;
+  background: #73000a;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 6px;
   text-decoration: none;
-  color: #2980b9;
-  font-weight: 600; 
-  font-size: 1.2em; 
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-.assign a:hover {
-  color: #1abc9c; 
+.cta-button:hover,
+.btn:hover {
+  background: #9e0012;
 }
 
-.assign p {
-  font-size: 16px;
-  color: #555; 
-  line-height: 1.6; 
-  margin-top: 10px;
+/* ---------- Sections ---------- */
+.content-section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: black;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
+.content-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+}
 
-ul.social-links {
-  list-style-type: none; 
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- Social Links ---------- */
+.social-links {
+  list-style: none;
   padding: 0;
-  text-align: center; 
+  display: flex;
+  gap: 25px;
 }
 
-ul.social-links li {
-  display: inline; 
-  margin: 0 15px;
+.social-links a {
+  color: #9e0012;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-ul.social-links a {
-  text-decoration: none; 
-  color: #2980b9;
-  font-weight: 600; 
-  transition: color 0.3s ease; 
+.social-links a:hover {
+  text-decoration: underline;
 }
 
-ul.social-links a:hover {
-  color: #1abc9c; 
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
